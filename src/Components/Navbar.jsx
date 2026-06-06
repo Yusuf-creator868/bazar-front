@@ -49,12 +49,12 @@ export default function Navbar({ activeSection }) {
     <>
       <header
         id="luxury-navbar"
-        className="fixed top-0 left-0 w-full z-50 transition-all duration-700 px-4 md:px-8  md:pt-6 pointer-events-none"
+        className="fixed top-0 left-0 w-full pt-3 z-50 transition-all duration-700 px-4 md:px-8  md:pt-4"
       >
         <div
           className={`max-w-7xl mx-auto px-6 md:px-8 flex justify-between items-center transition-all duration-500 pointer-events-auto ${isScrolled
-              ? "glass py-1 shadow-2xl rounded-full"
-              : "glass py-2 rounded-full bg-matte-black/40"
+              ? "glass shadow-2xl rounded-full"
+              : "glass py-1 rounded-full bg-matte-black/40"
             }`}
         >
           {/* Logo */}

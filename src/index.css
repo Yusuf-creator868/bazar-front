@@ -52,10 +52,16 @@
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(176, 139, 104, 0.15);
+  background: rgba(17, 17, 17, 0.55);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  transform: translateZ(0);
+  will-change: backdrop-filter;
+  isolation: isolate;
 }
 
 .gold-gradient {
