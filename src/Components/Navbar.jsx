@@ -54,8 +54,8 @@ export default function Navbar({ activeSection }) {
       >
         <div
           className={`max-w-7xl mx-auto px-6 md:px-8 flex justify-between items-center transition-all duration-500 pointer-events-auto border border-white/10 rounded-full backdrop-blur-2xl bg-black/30 ${isScrolled
-              ? "py-1 shadow-2xl"
-              : "py-2"
+              ? "shadow-2xl"
+              : "py-1"
             }`}
         >
           {/* Logo */}
