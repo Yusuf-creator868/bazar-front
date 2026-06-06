@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { FiBookOpen } from "react-icons/fi";
 
-import { IMAGES } from "./data";
+import bread from '../assets/bread.jpg'
 
 export default function About() {
   return (
@@ -101,7 +101,7 @@ export default function About() {
 
               {/* Image */}
               <img
-                src={IMAGES.bread}
+                src={bread}
                 alt="Bazar Restaurant Interior"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                 referrerPolicy="no-referrer"

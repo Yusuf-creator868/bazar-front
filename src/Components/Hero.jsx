@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { FiArrowDown, FiArrowRight } from "react-icons/fi";
-import { IMAGES } from "./data";
+import inter from '../assets/hero.png'
 
 export default function Hero({ onNavigate }) {
   return (
@@ -19,7 +19,7 @@ export default function Hero({ onNavigate }) {
         className="absolute inset-0 w-full h-full z-0"
       >
         <img
-          src={IMAGES.interior}
+          src={inter}
           alt="SHOSH Central Asian Luxury Lounge Interior"
           className="w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"

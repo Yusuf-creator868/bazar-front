@@ -6,9 +6,10 @@ import {
 } from "motion/react";
 
 import {
-  IMAGES,
   CHEF_STORY,
 } from "./data";
+
+import chef from '../assets/chef.jpg'
 
 import {
   FiAward,
@@ -66,7 +67,7 @@ export default function Chef() {
 
               {/* Image */}
               <img
-                src={IMAGES.chef}
+                src={chef}
                 alt="Chef Timur Khodja at work assembling plates"
                 className="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105 filter brightness-95"
                 referrerPolicy="no-referrer"
