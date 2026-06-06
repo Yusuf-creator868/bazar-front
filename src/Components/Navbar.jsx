@@ -154,7 +154,7 @@ export default function Navbar({ activeSection }) {
               duration: 0.4,
               ease: "easeInOut",
             }}
-            className="fixed top-0 left-0 w-full h-screen glass z-40 lg:hidden flex flex-col justify-center items-center px-8"
+            className="fixed top-0 left-0 w-full h-screen backdrop-blur-2xl bg-black/30 z-40 lg:hidden flex flex-col justify-center items-center px-8"
           >
             {/* Background Glow */}
             <div className="absolute top-[20%] left-[-10%] w-[60%] h-[40%] bg-olive-green/10 rounded-full blur-[120px] pointer-events-none" />
