@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FiMenu, FiX, FiCalendar, FiArrowRight } from "react-icons/fi";
 import logo from '../assets/logo.png'
-import '../index.css'
+
 
 export default function Navbar({ activeSection }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,9 +53,9 @@ export default function Navbar({ activeSection }) {
         className="fixed top-0 left-0 w-full pt-3 z-50 transition-all duration-700 px-4 md:px-8  md:pt-4"
       >
         <div
-          className={`max-w-7xl mx-auto px-6 md:px-8 flex justify-between items-center transition-all duration-500 pointer-events-auto ${isScrolled
-              ? "glass shadow-2xl rounded-full"
-              : "glass py-1 rounded-full bg-matte-black/40"
+          className={`max-w-7xl mx-auto px-6 md:px-8 flex justify-between items-center transition-all duration-500 pointer-events-auto border border-white/10 rounded-full backdrop-blur-2xl bg-black/30 ${isScrolled
+              ? "py-1 shadow-2xl"
+              : "py-2"
             }`}
         >
           {/* Logo */}
@@ -183,8 +183,8 @@ export default function Navbar({ activeSection }) {
                     }}
                     onClick={() => handleNavClick(item.id)}
                     className={`text-sm tracking-[0.25em] uppercase font-sans select-none transition-colors duration-400 ${activeSection === item.id
-                        ? "text-gold-accent"
-                        : "text-luxury-beige"
+                      ? "text-gold-accent"
+                      : "text-luxury-beige"
                       }`}
                   >
                     {item.label}
