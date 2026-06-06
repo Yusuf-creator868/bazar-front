@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FiMenu, FiX, FiCalendar, FiArrowRight } from "react-icons/fi";
 import logo from '../assets/logo.png'
+import '../index.css'
 
 export default function Navbar({ activeSection }) {
   const [isScrolled, setIsScrolled] = useState(false);
