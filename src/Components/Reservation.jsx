@@ -121,21 +121,57 @@ export default function Reservation() {
               <option value={8}>8 Guests</option>
             </select>
 
-            <input
-              type="date"
-              name="date"
-              value={formData.date}
-              onChange={handleInputChange}
-              className="p-4 bg-[#151515] border border-gold-accent/15 rounded-xl text-soft-cream text-xs"
-            />
+            <div className="flex flex-col gap-2">
+              <label className="text-[#B08B68] text-[10px] uppercase tracking-[0.2em]">
+                Date
+              </label>
 
-            <input
-              type="time"
-              name="time"
-              value={formData.time}
-              onChange={handleInputChange}
-              className="p-4 bg-[#151515] border border-gold-accent/15 rounded-xl text-soft-cream text-xs"
-            />
+              <input
+                type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleInputChange}
+                className="
+      w-full
+      p-4
+      bg-[#151515]
+      border border-[#B08B68]/15
+      rounded-xl
+      text-[#F5EFE6]
+      text-sm
+      outline-none
+      appearance-none
+      focus:border-[#B08B68]
+      transition-all
+    "
+              />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label className="text-[#B08B68] text-[10px] uppercase tracking-[0.2em]">
+                Time
+              </label>
+
+              <input
+                type="time"
+                name="time"
+                value={formData.time}
+                onChange={handleInputChange}
+                className="
+      w-full
+      p-4
+      bg-[#151515]
+      border border-[#B08B68]/15
+      rounded-xl
+      text-[#F5EFE6]
+      text-sm
+      outline-none
+      appearance-none
+      focus:border-[#B08B68]
+      transition-all
+    "
+              />
+            </div>
           </div>
 
           <textarea
