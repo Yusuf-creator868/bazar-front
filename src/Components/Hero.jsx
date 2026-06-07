@@ -102,25 +102,63 @@ export default function Hero({ onNavigate }) {
           }}
           className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md"
         >
-          {typeIDButton(
-            "reservation",
-            "Secure A Table",
-            "bg-gold-accent text-matte-black shadow-md shadow-gold-accent/10 border border-gold-accent/40 font-semibold hover:bg-soft-cream px-4 py-2 text-xs tracking-wide",
-            () =>
-              document.getElementById("reservation")?.scrollIntoView({
-                behavior: "smooth",
-              })
-          )}
+          <div className="flex flex-col sm:flex-row items-center gap-4">
 
-          {typeIDButton(
-            "menu",
-            "Explore Menu",
-            "glass-luxury border border-luxury-beige/10 hover:border-gold-accent text-luxury-beige font-medium hover:text-gold-accent px-4 py-2 text-xs tracking-wide",
-            () =>
-              document.getElementById("menu")?.scrollIntoView({
-                behavior: "smooth",
-              })
-          )}
+            {/* RESERVATION */}
+            <button
+              onClick={() =>
+                document
+                  .getElementById("reservation")
+                  ?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+              }
+              className="
+      px-5 py-2.5
+      rounded-full
+      bg-[#B08B68]
+      text-[#161311]
+      text-xs
+      uppercase
+      tracking-[0.18em]
+      font-medium
+      hover:bg-[#C59A72]
+      transition-all duration-300
+      cursor-pointer
+    "
+            >
+              Reserve Table
+            </button>
+
+            {/* MENU */}
+            <button
+              onClick={() =>
+                document
+                  .getElementById("menu")
+                  ?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+              }
+              className="
+      px-5 py-2.5
+      rounded-full
+      border border-white/10
+      bg-white/[0.03]
+      text-[#F5EFE6]
+      text-xs
+      uppercase
+      tracking-[0.18em]
+      font-medium
+      hover:border-[#B08B68]/40
+      hover:text-[#B08B68]
+      transition-all duration-300
+      cursor-pointer
+    "
+            >
+              Explore Menu
+            </button>
+
+          </div>
         </motion.div>
       </div>
 

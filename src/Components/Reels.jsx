@@ -102,9 +102,9 @@ export default function ReelsSection() {
                     ref={scrollRef}
                     className="
                     scrolling 
-                    overflow-x-auto
             flex gap-8
-            overflow-x-auto
+            overflow-x-scroll 
+            overflow-y-hidden
             scroll-smooth
             scrollbar-hide
             pb-4
@@ -124,9 +124,9 @@ export default function ReelsSection() {
                             }}
                             className="
                 relative
-                min-w-[340px]
-                max-w-[340px]
-          
+                w-[340px]
+                h-[620px]
+                flex-shrink-0
                 overflow-hidden
                 bg-zinc-900
                 border border-white/10
@@ -152,7 +152,7 @@ export default function ReelsSection() {
                             />
 
                             {/* Instagram Reel */}
-                            <div className="relative z-10 p-2">
+                            <div className="relative z-10 p-2 h-full overflow-hidden">
                                 <blockquote
                                     className="instagram-media"
                                     data-instgrm-permalink={reel}
